@@ -5,12 +5,15 @@
     "category": "Customizations",
     "summary": "custom_company",
     "description": """
-        
+
     """,
     "depends": ["base"],
     "installable": True,
     "application": False,
     "auto_install": False,
     "license": "OEEL-1",
-    "website": "",
+    "data":
+        [
+            "views/company.xml"
+        ]
 }
