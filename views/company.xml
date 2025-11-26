@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="custom_company_translate_field" model="ir.ui.view">
+            <field name="name">custom.company.extend</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="name_translated" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
