@@ -7,7 +7,7 @@
     "description": """
 
     """,
-    "depends": ["base", "account"],
+    "depends": ["base", "accountant"],
     "installable": True,
     "application": False,
     "auto_install": False,
