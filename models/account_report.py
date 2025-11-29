@@ -6,7 +6,7 @@ class AccountReport(AbstractModel):
     _inherit = "account.journal.report.handler"
 
     def export_to_xlsx(self, options, response=None):
-        self.ensure_one()
+        # self.ensure_one()
         output = io.BytesIO()
         workbook = xlsxwriter.Workbook(output, {
             'in_memory': True,
