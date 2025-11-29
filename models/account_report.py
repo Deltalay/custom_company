@@ -1,8 +1,8 @@
-from odoo.models import Model
+from odoo.models import AbstractModel
 import io
 from odoo.tools.misc import xlsxwriter
 
-class AccountReport(Model):
+class AccountReport(AbstractModel):
     _inherit = "account.report.custom.handler"
 
     def export_to_xlsx(self, options, response=None):
