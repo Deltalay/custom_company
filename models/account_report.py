@@ -131,7 +131,7 @@ class AccountReport(AbstractModel):
         output.close()
 
         return {
-            'file_name': 'test.xlsx',
+            'file_name': report.get_default_report_filename(options, 'xlsx'),
             'file_content': generated_file,
             'file_type': 'xlsx',
         }
