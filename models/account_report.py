@@ -3,7 +3,7 @@ import io
 from odoo.tools.misc import xlsxwriter
 
 class AccountReport(AbstractModel):
-    _inherit = "account.report.custom.handler"
+    _inherit = "account.report"
 
     def export_to_xlsx(self, options, response=None):
         self.ensure_one()
